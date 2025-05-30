@@ -1,0 +1,139 @@
+.Portfolio_Main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 100px;
+  gap: 36px;
+  width: 100%;
+  max-width: 1731px;
+  height: auto; 
+  margin-top: 200px;
+}
+
+.portfolio_Content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 23px;
+
+  border: 1px solid #737373;
+  border-radius: 10px;
+
+  width: 100%;
+  max-width: 360px;
+}
+.Portfolio_item_colum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 30px;
+
+  width: 100%; 
+  max-width: 1530px; 
+  height: auto; 
+}
+
+
+.Portfolio_item_row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+
+}
+.Portfolio_img {
+  width: 280px;
+  height: 190px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;        
+    object-fit: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.Portfolio_miniContent{
+  width: 100%;
+  max-width: 256px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+.Portfolio_miniContent_h2{
+font-family: 'Gotham';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: -0.05em;
+}
+.Portfolio_miniContent_atributes{
+  width: 100%;
+  max-width: 256px;
+  max-height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5px;
+  color: #784DC7;
+}
+.Portfolio_miniContent_atribute{
+  width: 100%;
+  max-width: 83px;
+  height: 24px;
+  background-color: #E9DFFC;
+  border: 1px solid #BE9FF6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 12px;
+  font-family: 'Gotham';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: -0.05em;
+}
+.Portfolio_Button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 5px;
+
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+
+  background: #292929;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 431px) {
+  .Portfolio_Main {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .Portfolio_item_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

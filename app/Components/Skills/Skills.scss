@@ -1,0 +1,160 @@
+.Skills_Main{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 100px;
+  gap: 36px;
+  width: 100%;
+  max-width: 1731px;
+  height: auto; 
+  margin-top: 200px;
+}
+
+.Skills_Content_colum{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 30px;
+
+  width: 100%; 
+  height: auto; 
+}
+.Skills_Content_row{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  max-width: 1531px;
+  padding: 0 32px;
+
+  margin: 0 auto;
+}
+.Skills_Content{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #737373;
+    padding: 40px 50px 60px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.Skills_Content_img{
+width: 220px;
+height: 220px;
+  background-size: cover;        
+    object-fit: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.Skills_Content_Texts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+.Skills_Content_Texts_h1{
+    font-family: 'Gotham Black';
+font-style: normal;
+align-items: flex-start;
+display: flex;
+justify-content: flex-start;
+font-weight: 500;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: -0.05em;
+}
+.Skills_Content_Texts_h4{
+font-family: 'Gotham';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: -0.05em;
+}
+
+
+@media (min-width: 375px) and (max-width: 431px) {
+.Skills_Main{
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.Skills_Content{
+  flex-direction: column;
+  justify-content: center;
+  width: 386px;
+  align-items: center;
+  gap: 20px;
+}
+.Skills_Content_Texts{
+  justify-content: center;
+  align-items: center;
+    text-align: center;
+}
+.Skills_Content_Texts_h4{
+  text-align: center;
+}
+.Skills_Content_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Skills_Content_colum{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Skills_Content_img{
+  width: 220px;
+  height: 220px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Skills_Main{
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+}
+.Skills_Content{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Skills_Content_Texts{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Skills_Content_Texts_h4{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Skills_Content_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Skills_Content_colum{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Skills_Content_img{
+  width: 220px;
+  height: 220px;
+}
+.Skills_Content_Texts_h1, .Skills_Content_Texts_h4 {
+  align-self: flex-start;
+}
+}

@@ -1,0 +1,29 @@
+.theme-toggle {
+  width: 56px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: #ccc;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  .toggle-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    background-color: white;
+  }
+
+  .light {
+    transform: translateX(0);
+    background-color: #f1f1f1;
+  }
+
+  .dark {
+    transform: translateX(24px);
+    background-color: #333;
+  }
+}

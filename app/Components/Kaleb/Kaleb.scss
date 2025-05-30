@@ -1,0 +1,140 @@
+.Kaleb_Main {
+  width: 100%;
+  max-width: 1728px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+}
+
+.Kalev_Content {
+  position: absolute;
+  width: 1094px;
+  height: 506px;
+  top: calc(50% - 506px / 2);
+  left: calc(50% - 1094px / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 60px;
+
+  color: white;
+}
+
+.Kalev_Content_shield{
+    width: 72px;
+    height: 86px;
+}
+
+
+.Kalev_Content_h1{
+width: 420px;
+height: 50px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 105%;
+display: flex;
+align-items: center;
+letter-spacing: -0.05em;
+}
+
+
+
+.Kalev_Content_h2{
+width: 1094px;
+height: 250px;
+
+font-family: 'Poppins';
+font-weight: 700;
+font-size: 48px;
+line-height: 105%;
+display: flex;
+align-items: center;
+letter-spacing: -0.05em;
+}
+
+@media   (max-width: 431px) {
+  .Kalev_Content {
+    padding: 0 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.Kalev_Content_h1{
+  width: 210px;
+height: 25px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+.Kalev_Content_h2{
+
+width: 386px;
+height: 175px;
+font-family: 'Poppins';
+font-style: italic;
+font-weight: 700;
+font-size: 24px;
+line-height: 105%;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.05em;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Kalev_Content {
+    padding: 0 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.Kalev_Content_h1{
+width: 350px;
+height: 42px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 105%;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.05em;
+}
+.Kalev_Content_h2{
+
+width: 864px;
+height: 210px;
+
+font-family: 'Poppins';
+font-style: italic;
+font-weight: 700;
+font-size: 40px;
+line-height: 105%;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.05em;
+
+}
+}

@@ -1,0 +1,42 @@
+.burger {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
+  margin-top: 35px;
+}
+
+.burger .line {
+  width: 30px;
+  height: 3px;
+  margin: 3px 0;
+  transition: all 0.3s ease-in-out;
+}
+.burger .line.light {
+  background-color: black;
+
+}
+.burger .line.dark {
+  background-color: white;
+
+}
+.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .burger {
+      display: flex; 
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+}
