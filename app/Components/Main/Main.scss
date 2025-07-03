@@ -7,7 +7,8 @@
   flex-direction: row;
   align-items: center;
   gap: 19px;
-  margin-top: 60px;
+  margin: 60px auto 0;
+  box-sizing: border-box;
 }
 
 .fill_hero {
@@ -16,7 +17,7 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
-  position: relative; 
+  position: relative;
 }
 
 .hero_main_items {
@@ -25,9 +26,9 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 70px;
-
 }
-.hero_socialsAndDownload{
+
+.hero_socialsAndDownload {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -35,8 +36,10 @@
   height: 144px;
   gap: 40px;
 }
+
 .hero_text {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 200;
   font-size: clamp(48px, 10vw, 120px);
   line-height: 0.9;
@@ -45,22 +48,22 @@
   width: 100%;
   max-width: 1731px;
   text-transform: uppercase;
-
 }
 
-
 .hero_text_pin {
-  background: linear-gradient(to right, #FA709A, #FEE140);
+  background: linear-gradient(to right, #fa709a, #fee140);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero_socials{
+
+.hero_socials {
   display: flex;
   justify-content: space-between;
   max-width: 660px;
   max-height: 52px;
 }
-.socialBox{
+
+.socialBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,11 +71,11 @@
   height: 52px;
 }
 
-.hero_download{
+.hero_download {
   width: 100%;
   max-width: 660px;
   height: 52px;
-  padding:16px 24px 16px 32px ;
+  padding: 16px 24px 16px 32px;
   gap: 8px;
   display: flex;
   flex-direction: row;
@@ -81,18 +84,19 @@
   background-color: #292929;
 }
 
-.hero_download_h4{
+.hero_download_h4 {
   color: white;
   font-size: 20px;
   letter-spacing: -0.05em;
   line-height: 100%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .starIco {
   position: absolute;
   top: 0;
   right: 0;
-  width: 120px; 
+  width: 120px;
   height: 120px;
 
   img {
@@ -100,9 +104,7 @@
     height: 100%;
     object-fit: contain;
   }
-  
 }
-
 
 .bigImage {
   width: 694px;
@@ -112,10 +114,9 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
   }
 }
-
 
 @media (min-width: 375px) and (max-width: 431px) {
   .hero {
@@ -145,44 +146,17 @@
     padding: 0 12px;
     max-width: 100%;
   }
-   .hero_img{
+
+  .hero_img,
+  .bigImage,
+  .starIco {
     display: none;
   }
-  .bigImage{
-    display: none;
-  }
-.starIco{
-  display: none;
-}
-.hero_main_items {
-  align-items: center;
-}
-.hero_text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 100px;
-  width: fit-content;
-  text-align: center;
-}
-  .hero_text {
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%; 
-    padding: 0 12px; 
-  }
-  .fill_hero{
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  }
-  .hero_text_pin{
+
+  .hero_text_pin {
     font-size: 53px;
   }
 }
- 
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
@@ -194,70 +168,41 @@
   }
 
   .fill_hero {
-    max-width: 100%;
-    width: 100%;
     max-width: 660px;
-
+    width: 100%;
   }
 
   .hero_main_items {
     max-width: 100%;
     width: 100%;
     gap: 40px;
-
+    align-items: center;
   }
 
   .hero_text {
-    font-size: 10px;
-    max-width: 100%;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: clamp(32px, 25vw, 140px);
+    line-height: 90%;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-  }
-   .hero_img{
-    display: none;
-  }
-  .bigImage{
-    display: none;
-  }
-.starIco{
-  display: none;
-}
-.hero_main_items {
-  align-items: center;
-}
-
-  .hero_text {
-width: 100%;
-height: auto;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
- font-size: clamp(32px, 25vw, 140px);
-line-height: 90%;
-display: flex;
-align-items: flex-start;
-  }
-  .fill_hero{
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  }
-  .hero_text_pin{
     width: 100%;
-    height: auto;
-    font-family: 'Anton';
-    font-style: normal;
+  }
+
+  .hero_text_pin {
+    font-family: 'Anton', sans-serif;
     font-weight: 400;
- font-size: clamp(32px, 25vw, 83px);
+    font-size: clamp(32px, 25vw, 83px);
     line-height: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+    height: auto;
   }
-  .hero_socialsAndDownload{
+
+  .hero_socialsAndDownload {
     padding: 0;
     width: 100%;
   }

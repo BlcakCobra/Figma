@@ -18,49 +18,49 @@ import GraphLight from "./../images/light/GraphLight.png"
 
 
 export const siteDb = {
-    navbarItems: [ "Home","Portfolio","Skills","About Me"],
-    socialLogosLight:[dark_i,dark_l,dark_t,dark_f,dark_m,dark_tw],
-    socialLogosDark:[light_i,light_l,light_t,light_f,light_m,light_tw],
-    portfolioContent:[Portfolio,Portfolio,Portfolio,Portfolio,Portfolio,Portfolio,Portfolio,Portfolio] ,
-    GraphDark:[{
-        img:GraphDark,
-        name:"UX Design",
-        description:"UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
+    navbarItems: ["Home", "Portfolio", "Skills", "About Me"],
+    socialLogosLight: [dark_i, dark_l, dark_t, dark_f, dark_m, dark_tw],
+    socialLogosDark: [light_i, light_l, light_t, light_f, light_m, light_tw],
+    portfolioContent: [Portfolio, Portfolio, Portfolio, Portfolio, Portfolio, Portfolio, Portfolio, Portfolio],
+    GraphDark: [{
+        img: GraphDark,
+        name: "UX Design",
+        description: "UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
     },
-{
-        img:GraphDark,
-        name:"UI Design",
-        description:"UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
+    {
+        img: GraphDark,
+        name: "UI Design",
+        description: "UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
     },
-{
-        img:GraphDark,
-        name:"Information Architecture",
-        description:"Information architecture is the design of the structure and organization of content on a website or digital product to make it easy for users to navigate and understand."
+    {
+        img: GraphDark,
+        name: "Information Architecture",
+        description: "Information architecture is the design of the structure and organization of content on a website or digital product to make it easy for users to navigate and understand."
     },
-{
-        img:GraphDark,
-        name:"Figma",
-        description:"Figma is a cloud-based design tool that allows teams to collaborate on the design process in real time. It offers a range of features for designing, prototyping, and sharing user interfaces."
+    {
+        img: GraphDark,
+        name: "Figma",
+        description: "Figma is a cloud-based design tool that allows teams to collaborate on the design process in real time. It offers a range of features for designing, prototyping, and sharing user interfaces."
     }]
-,
-GraphLight: [{
-        img:GraphLight,
-        name:"UX Design",
-        description:"UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
+    ,
+    GraphLight: [{
+        img: GraphLight,
+        name: "UX Design",
+        description: "UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
     },
-{
-        img:GraphLight,
-        name:"UI Design",
-        description:"UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
+    {
+        img: GraphLight,
+        name: "UI Design",
+        description: "UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users."
     },
-{
-        img:GraphLight,
-        name:"Information Architecture",
-        description:"Information architecture is the design of the structure and organization of content on a website or digital product to make it easy for users to navigate and understand."
+    {
+        img: GraphLight,
+        name: "Information Architecture",
+        description: "Information architecture is the design of the structure and organization of content on a website or digital product to make it easy for users to navigate and understand."
     },
-{
-        img:GraphLight,
-        name:"Figma",
-        description:"Figma is a cloud-based design tool that allows teams to collaborate on the design process in real time. It offers a range of features for designing, prototyping, and sharing user interfaces."
+    {
+        img: GraphLight,
+        name: "Figma",
+        description: "Figma is a cloud-based design tool that allows teams to collaborate on the design process in real time. It offers a range of features for designing, prototyping, and sharing user interfaces."
     }]
 }

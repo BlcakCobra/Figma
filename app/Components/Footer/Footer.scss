@@ -1,107 +1,52 @@
-@import "./../NavBar/NavBar.scss";
-
 .Footer_Main {
-  max-width: 1728px;
   width: 100%;
-  height: 283px; 
-  background-color: #292929;
-  margin-top: 200px;
+  max-width: 1728px;
+  margin: 200px auto 0;
+  padding: 0 100px;
   display: flex;
-  position: relative;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  background-color: #292929;
+  box-sizing: border-box;
 }
-  .navbar-item.second {
-    color: white;
-    font-size: 14px;
-  }
 
-  .navbar_second_list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
-  }
 .Footer_Content {
   width: 100%;
-  height: 90px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-bottom: 1px solid white; 
+  justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
-  gap: 900px;
-    padding-bottom: 20px; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
 }
 
-.Footer_logo_image.second {
+.Footer_logo_image {
   width: 93px;
   height: 40px;
-  background-size: cover;
-  background-position: center;
+  object-fit: contain;
 }
 
-.navbar-item.second {
+.navbar_second_list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  font-size: 14px;
   color: white;
 }
 
-@media (max-width: 431px) {
+@media (max-width: 768px) {
   .Footer_Content {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    height: auto;
   }
 
-  .Footer_logo_image.second {
+  .Footer_logo_image {
     width: 80px;
     height: auto;
-  }
-
-  .navbar-item.second {
-    color: white;
-    font-size: 14px;
-  }
-
-  .navbar_second_list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .Footer_Content {
-    flex-direction: row;
-    gap: 500px;
-    align-items: center;
-    height: auto;
-  }
-
-  .Footer_logo_image.second {
-    width: 80px;
-    height: auto;
-  }
-
-  .navbar-item.second {
-    color: white;
-    font-size: 14px;
-  }
-
-  .navbar_second_list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
   }
 }

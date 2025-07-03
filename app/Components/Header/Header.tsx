@@ -1,10 +1,10 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
 
-export default function Header() {
-  return (
+const Header = () => (
+
     <header>
-        <NavBar/>
+      <NavBar />
     </header>
-)
-}
+  )
+export default Header

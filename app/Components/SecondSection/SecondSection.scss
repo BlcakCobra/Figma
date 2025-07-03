@@ -1,13 +1,14 @@
 .second-section {
+  max-width: 1731px;
+  width: 100%;
+  margin: 200px auto 0;  /* Центрирование с отступом сверху */
+  padding: 0 100px;       /* Отступы слева и справа */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 100px;
+  align-items: center;   /* Центрируем содержимое */
   gap: 36px;
-  width: 100%;
-  max-width: 1731px;
-  height: auto; 
-  margin-top: 200px;
+  box-sizing: border-box;
+  height: auto;
 }
 
 .Rates {
@@ -15,11 +16,10 @@
   max-width: 1731px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: center;  /* Центрируем содержимое */
   gap: 10px;
   box-sizing: border-box;
 }
-
 
 .Rates_Items {
   width: 100%;
@@ -27,34 +27,31 @@
   height: 372px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;  /* Центрируем содержимое */
   justify-content: flex-start;
-  padding: 82px 0px;
+  padding: 82px 0;
   gap: 10px;
   border-radius: 29px;
   box-sizing: border-box;
 }
 
-
-
-.Rates_Items.dark{
- background-color: #0B0B0B;
+.Rates_Items.dark {
+  background-color: #0b0b0b;
 }
 
-.Rates_Items.light{
- background-color: #EDFFEC;
+.Rates_Items.light {
+  background-color: #edffec;
 }
 
 .Rates_Items_Content {
   width: 100%;
-  max-width: 1532px; 
+  max-width: 1532px;
   height: 208px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-
 
 .Content {
   width: 287px;
@@ -69,9 +66,11 @@
 .content-1 {
   width: 287px;
 }
+
 .content-2 {
   width: 387px;
 }
+
 .content-3 {
   width: 190px;
 }
@@ -79,44 +78,38 @@
 .Content_h2 {
   width: 262px;
   height: 115px;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: clamp(32px, 10vw, 128px);
   font-weight: 400;
   line-height: 90%;
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
 
 .Content_h3 {
   width: 287px;
   height: 72px;
-  font-family: 'Gotham Black', sans-serif;
+  font-family: "Gotham Black", sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 100%;
   letter-spacing: -0.05em;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-
-.Content_h2.light{
-    color: #83E281;
-}
-.Content_h3.light{
-    color: #83E281;
-}
-.Content_h2.dark{
-    color: #C8FEC7;
-}
-.Content_h3.dark{
-    color: #C8FEC7;
+.Content_h2.light,
+.Content_h3.light {
+  color: #83e281;
 }
 
-
-
+.Content_h2.dark,
+.Content_h3.dark {
+  color: #c8fec7;
+}
 
 .star {
   width: 80px;
@@ -125,62 +118,42 @@
   align-items: center;
   justify-content: center;
 }
+
 @media (min-width: 375px) and (max-width: 431px) {
   .second-section {
     margin-top: 68px;
     padding: 0 16px;
   }
-  .Rates{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 82px 0px;
-gap: 10px;
 
-
-background: #F6FFF6;
-border-radius: 29px;
-    border: 1px solid ;
-
+  .Rates {
+    padding: 82px 0;
+    gap: 10px;
+    background: #f6fff6;
+    border-radius: 29px;
+    border: 1px solid;
+    align-items: center;
   }
 
   .Rates_Items {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-height: 657px;
-
-
+    height: 657px;
+    align-items: flex-start;
   }
 
-.Rates_Items_Content {
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 105px; 
-}
+  .Rates_Items_Content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 105px;
+  }
 
   .Content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     gap: 12px;
     text-align: center;
-  }
-
-  .content-1 {
-    width: 100%;
-  }
-
-  .content-2 {
-    width: 100%;
-  }
-
-  .content-3 {
-    width: 100%;
   }
 
   .Content_h2 {
@@ -200,26 +173,14 @@ height: 657px;
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .Content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     gap: 12px;
     text-align: center;
-  }
-
-  .content-1 {
-    width: 100%;
-  }
-
-  .content-2 {
-    width: 100%;
-  }
-
-  .content-3 {
     width: 100%;
   }
 

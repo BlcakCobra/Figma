@@ -10,95 +10,92 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .Kalev_Content {
   position: absolute;
   width: 1094px;
   height: 506px;
-  top: calc(50% - 506px / 2);
-  left: calc(50% - 1094px / 2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   gap: 60px;
-
   color: white;
+  box-sizing: border-box;
 }
 
-.Kalev_Content_shield{
-    width: 72px;
-    height: 86px;
+.Kalev_Content_shield {
+  width: 72px;
+  height: 86px;
 }
 
+.Kalev_Content_h1 {
+  width: 420px;
+  height: 50px;
 
-.Kalev_Content_h1{
-width: 420px;
-height: 50px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 105%;
-display: flex;
-align-items: center;
-letter-spacing: -0.05em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 105%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  justify-content: center;
+  text-align: center;
 }
 
+.Kalev_Content_h2 {
+  width: 1094px;
+  height: 250px;
 
-
-.Kalev_Content_h2{
-width: 1094px;
-height: 250px;
-
-font-family: 'Poppins';
-font-weight: 700;
-font-size: 48px;
-line-height: 105%;
-display: flex;
-align-items: center;
-letter-spacing: -0.05em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 105%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  justify-content: center;
+  text-align: center;
 }
 
-@media   (max-width: 431px) {
+@media (max-width: 431px) {
   .Kalev_Content {
     padding: 0 22px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
   }
-.Kalev_Content_h1{
-  width: 210px;
-height: 25px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 105%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  letter-spacing: -0.05em;
-}
-.Kalev_Content_h2{
 
-width: 386px;
-height: 175px;
-font-family: 'Poppins';
-font-style: italic;
-font-weight: 700;
-font-size: 24px;
-line-height: 105%;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.05em;
-}
-}
+  .Kalev_Content_h1 {
+    width: 210px;
+    height: 25px;
+    font-weight: 600;
+    font-size: 24px;
+    justify-content: center;
+  }
 
+  .Kalev_Content_h2 {
+    width: 386px;
+    height: 175px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: center;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Kalev_Content {
@@ -106,35 +103,26 @@ letter-spacing: -0.05em;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
   }
-.Kalev_Content_h1{
-width: 350px;
-height: 42px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 105%;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.05em;
-}
-.Kalev_Content_h2{
+  .Kalev_Content_h1 {
+    width: 350px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 40px;
+    justify-content: center;
+  }
 
-width: 864px;
-height: 210px;
-
-font-family: 'Poppins';
-font-style: italic;
-font-weight: 700;
-font-size: 40px;
-line-height: 105%;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.05em;
-
-}
+  .Kalev_Content_h2 {
+    width: 864px;
+    height: 210px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    justify-content: center;
+  }
 }

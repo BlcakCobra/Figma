@@ -7,19 +7,19 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import SecondSection from "./Components/SecondSection/SecondSection";
 import Skills from "./Components/Skills/Skills";
 
-export default function Home() {
-  return (
-    <div className="Mainer">
+const Home = () => (
+  <div className="Mainer">
     <div className="wrapper">
-      <Header/>
-      <Main/>
+      <Header />
+      <Main />
     </div>
-    <SecondSection/>
-    <Portfolio/>
-    <Skills/>
-    <Kaleb/>
-    <AboutMe/>
-    <Footer/>
-    </div>
-  );
-}
+    <SecondSection />
+    <Portfolio />
+    <Skills />
+    <Kaleb />
+    <AboutMe />
+    <Footer />
+  </div>
+);
+
+export default Home
